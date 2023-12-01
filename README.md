@@ -1,16 +1,8 @@
 # photo_website
 
-A new Flutter project.
+This is the repo for my photo website. 
+The plan is to eventually be able to sell prints of my photos from the site as well. 
+Currently it just acts as a gallery with a short about page and an in construction print shop page.
+Currently it only plays nicely on traditional desktop browsers, I've tried it on mobile and the formatting has trouble.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+My plan for the future is to add mobile compatibility so that it should be able to work relatively seamlessly on all browsers.
