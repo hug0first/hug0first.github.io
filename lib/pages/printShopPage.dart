@@ -86,7 +86,7 @@ class _PrintShopPageState extends State<PrintShopPage> {
                     child: Text(
                       'This is the Print Shop Page. It is currently under construction, and I am planning to add a way to order prints of my photos in the future.',
                       style: TextStyle(
-                        fontSize: 30,
+                        fontSize: 31,
                         fontWeight: FontWeight.bold,
                         fontFamily: 'Josefin Sans',
                         color: Theme.of(context).colorScheme.background,
