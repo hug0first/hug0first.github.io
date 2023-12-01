@@ -26,27 +26,30 @@ class _AboutPageState extends State<AboutPage> {
             Padding(
               padding: EdgeInsets.only(top: screenHeight * 0.1),
               child: Container(
-                height: 100,
+                height: screenHeight * 0.1,
+                width: screenWidth * 0.065,
                 decoration: BoxDecoration(
                   color: Theme.of(context).colorScheme.background,
-                  borderRadius: const BorderRadius.only(
-                    topRight: Radius.circular(50),
-                    bottomRight: Radius.circular(50),
+                  borderRadius: BorderRadius.only(
+                    topRight: Radius.circular(screenWidth / 40),
+                    bottomRight: Radius.circular(screenWidth / 40),
                   ),
                 ),
                 child: Container(
-                  padding: const EdgeInsets.all(10),
+                  padding: EdgeInsets.all(screenWidth * 0.008),
                   width: screenWidth * 0.045,
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
-                      IconButton(
+                      Expanded(
+                        child: IconButton(
                         onPressed: () {
                           Navigator.pop(context);
                         },
                         icon: const Icon(Icons.arrow_back),
-                        iconSize: 50,
+                        iconSize: (screenWidth < screenHeight)? screenWidth / 20.4 : screenHeight / 18.5,
                         color: Theme.of(context).colorScheme.primary,
+                      ),
                       ),
                     ],
                   ),

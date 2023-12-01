@@ -55,44 +55,41 @@ class _HomePageState extends State<HomePage> {
                 height: 200,
                 decoration: BoxDecoration(
                   color: Theme.of(context).colorScheme.secondary,
-                  borderRadius: const BorderRadius.only(
-                    topRight: Radius.circular(50),
-                    bottomRight: Radius.circular(50),
+                  borderRadius: BorderRadius.only(
+                    topRight: Radius.circular(screenWidth / 40),
+                    bottomRight: Radius.circular(screenWidth / 40),
                   ),
                 ),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  crossAxisAlignment: CrossAxisAlignment.center,
                   children: <Widget>[
                     Container(
                       padding: const EdgeInsets.all(10),
                       width: screenWidth * 0.045,
-                      child: Column(
-                        children: <Widget>[
-                          IconButton(
-                            onPressed: () {
-                              animatePageTransition(-1);
-                            },
-                            icon: const Icon(Icons.arrow_upward),
-                            iconSize: 50,
-                            color: Theme.of(context).colorScheme.primary,
-                          ),
-                        ],
+                      child: Expanded(
+                        child: IconButton(
+                          onPressed: () {
+                            animatePageTransition(-1);
+                          },
+                          icon: const Icon(Icons.arrow_upward),
+                          iconSize: (screenWidth < screenHeight)? screenWidth / 20.4 : screenHeight / 18.5,
+                          color: Theme.of(context).colorScheme.primary,
+                        ),
                       ),
                     ),
                     Container(
                       padding: const EdgeInsets.all(10),
                       width: screenWidth * 0.045,
-                      child: Column(
-                        children: <Widget>[
-                          IconButton(
-                            onPressed: () {
-                              animatePageTransition(1);
-                            },
-                            icon: const Icon(Icons.arrow_downward),
-                            iconSize: 50,
-                            color: Theme.of(context).colorScheme.primary,
-                          ),
-                        ],
+                      child: Expanded(
+                        child: IconButton(
+                          onPressed: () {
+                            animatePageTransition(1);
+                          },
+                          icon: const Icon(Icons.arrow_downward),
+                          iconSize: (screenWidth < screenHeight)? screenWidth / 20.4 : screenHeight / 18.5,
+                          color: Theme.of(context).colorScheme.primary,
+                        ),
                       ),
                     ),
                   ],
