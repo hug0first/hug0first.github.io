@@ -81,8 +81,7 @@ class _PrintShopPageState extends State<PrintShopPage> {
                   child: SizedBox(
                     width: screenWidth * 0.5,
                     child: Text(
-                      'This is the Print Shop Page. It is currently under construction, and I am planning to add'
-                      'a way to order prints of my photos. in the future.',
+                      'This is the Print Shop Page. It is currently under construction, and I am planning to add a way to order prints of my photos. in the future.',
                       style: TextStyle(
                         fontSize: 30,
                         fontWeight: FontWeight.bold,
