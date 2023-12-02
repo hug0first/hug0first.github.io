@@ -73,7 +73,7 @@ class _PrintShopPageState extends State<PrintShopPage> {
                   ),
                 ),
                 SizedBox(
-                  width: screenWidth * 0.1,
+                  width: screenWidth * 0.2,
                   child: Divider(
                   color: Theme.of(context).colorScheme.background,
                   thickness: 5,
